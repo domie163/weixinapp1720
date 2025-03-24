@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#648070",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "戏曲文化苑首页",
+  "usingComponents": {
+    "uni-icons": "/components/uni-ui/lib/uni-icons/uni-icons"
+  }
+}

@@ -1,0 +1,297 @@
+{
+	"pages": [{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "登录"
+			}
+		}, {
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "注册"
+			}
+		}, {
+			"path": "pages/forget/forget",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "忘记密码"
+			}
+		},
+		{
+			"path": "pages/changepassword/changepassword",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/center/center",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的"
+			}
+		}, {
+			"path": "pages/user-info/userinfo",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "用户信息"
+			}
+		}
+
+		, {
+			"path": "pages/caozuorizhi/list",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "操作日志展示"
+			}
+		}, {
+			"path": "pages/caozuorizhi/list2",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的操作日志"
+			}
+		}, {
+			"path": "pages/caozuorizhi/add-or-update",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "操作日志添加/修改"
+			}
+		}, {
+			"path": "pages/caozuorizhi/detail",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "操作日志详情"
+			}
+		}, {
+			"path": "pages/gonggao/list",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "公告展示"
+			}
+		}, {
+			"path": "pages/gonggao/list2",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的公告"
+			}
+		}, {
+			"path": "pages/gonggao/add-or-update",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "公告添加/修改"
+			}
+		}, {
+			"path": "pages/gonggao/detail",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "公告详情"
+			}
+		}, {
+			"path": "pages/xiqu/list",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲展示"
+			}
+		}, {
+			"path": "pages/xiqu/list2",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的戏曲"
+			}
+		}, {
+			"path": "pages/xiqu/add-or-update",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲添加/修改"
+			}
+		}, {
+			"path": "pages/xiqu/detail",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲详情"
+			}
+		}, {
+			"path": "pages/xiquCollection/list",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲收藏展示"
+			}
+		}, {
+			"path": "pages/xiquCollection/list2",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的戏曲收藏"
+			}
+		}, {
+			"path": "pages/xiquCollection/add-or-update",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲收藏添加/修改"
+			}
+		}, {
+			"path": "pages/xiquCollection/detail",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲收藏详情"
+			}
+		}, {
+			"path": "pages/xiquLiuyan/list",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲留言展示"
+			}
+		}, {
+			"path": "pages/xiquLiuyan/list2",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的戏曲留言"
+			}
+		}, {
+			"path": "pages/xiquLiuyan/add-or-update",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲留言添加/修改"
+			}
+		}, {
+			"path": "pages/xiquLiuyan/detail",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲留言详情"
+			}
+		}, {
+			"path": "pages/xiqukepu/list",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲科普展示"
+			}
+		}, {
+			"path": "pages/xiqukepu/list2",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的戏曲科普"
+			}
+		}, {
+			"path": "pages/xiqukepu/add-or-update",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲科普添加/修改"
+			}
+		}, {
+			"path": "pages/xiqukepu/detail",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲科普详情"
+			}
+		}, {
+			"path": "pages/yonghu/list",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "用户展示"
+			}
+		}, {
+			"path": "pages/yonghu/list2",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的用户"
+			}
+		}, {
+			"path": "pages/yonghu/add-or-update",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "用户添加/修改"
+			}
+		}, {
+			"path": "pages/yonghu/detail",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "用户详情"
+			}
+		}, {
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarBackgroundColor": "#648070",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "戏曲文化苑首页"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "戏曲文化苑",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#FFFFFF",
+		"selectedColor": "#fff",
+		"borderStyle": "black",
+		"backgroundColor": "#599f6e",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabs/index.png",
+			"selectedIconPath": "static/tabs/index1.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/gonggao/list",
+			"iconPath": "static/tabs/type.png",
+			"selectedIconPath": "static/tabs/type1.png",
+			"text": "公告"
+		}, {
+			"pagePath": "pages/xiqu/list",
+			"iconPath": "static/tabs/type.png",
+			"selectedIconPath": "static/tabs/type1.png",
+			"text": "戏曲"
+		}, {
+			"pagePath": "pages/xiqukepu/list",
+			"iconPath": "static/tabs/type.png",
+			"selectedIconPath": "static/tabs/type1.png",
+			"text": "戏曲科普"
+		}, {
+			"pagePath": "pages/center/center",
+			"iconPath": "static/tabs/mine.png",
+			"selectedIconPath": "static/tabs/mine1.png",
+			"text": "我的"
+		}]
+	}
+	// "permission": {
+	// 	"scope.userLocation": {
+	// 		"desc": ""
+	// 	}
+	// },
+	// "requiredPrivateInfos": ["getLocation", "chooseLocation"]
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.XiquDao">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        a.id as id
+        ,a.xiqu_name as xiquName
+        ,a.xiqu_uuid_number as xiquUuidNumber
+        ,a.xiqu_photo as xiquPhoto
+        ,a.xiqu_address as xiquAddress
+        ,a.xiqu_file as xiquFile
+        ,a.xiqu_music as xiquMusic
+        ,a.xiqu_video as xiquVideo
+        ,a.xiqu_types as xiquTypes
+        ,a.zan_number as zanNumber
+        ,a.cai_number as caiNumber
+        ,a.xiqu_clicknum as xiquClicknum
+        ,a.xiqu_content as xiquContent
+        ,a.shangxia_types as shangxiaTypes
+        ,a.xiqu_delete as xiquDelete
+        ,a.insert_time as insertTime
+        ,a.create_time as createTime
+    </sql>
+    <select id="selectListView" parameterType="map" resultType="com.entity.view.XiquView" >
+        SELECT
+        <include refid="Base_Column_List" />
+        <!-- 级联表的字段 -->
+
+        FROM xiqu  a
+
+        <where>
+            <if test="params.ids != null">
+                and a.id in
+                <foreach item="item" index="index" collection="params.ids" open="(" separator="," close=")">
+                #{item}
+                </foreach>
+            </if>
+            <if test=" params.xiquName != '' and params.xiquName != null and params.xiquName != 'null' ">
+                and a.xiqu_name like CONCAT('%',#{params.xiquName},'%')
+            </if>
+            <if test=" params.xiquUuidNumber != '' and params.xiquUuidNumber != null and params.xiquUuidNumber != 'null' ">
+                and a.xiqu_uuid_number like CONCAT('%',#{params.xiquUuidNumber},'%')
+            </if>
+            <if test=" params.xiquAddress != '' and params.xiquAddress != null and params.xiquAddress != 'null' ">
+                and a.xiqu_address like CONCAT('%',#{params.xiquAddress},'%')
+            </if>
+            <if test=" params.xiquMusic != '' and params.xiquMusic != null and params.xiquMusic != 'null' ">
+                and a.xiqu_music like CONCAT('%',#{params.xiquMusic},'%')
+            </if>
+            <if test=" params.xiquVideo != '' and params.xiquVideo != null and params.xiquVideo != 'null' ">
+                and a.xiqu_video like CONCAT('%',#{params.xiquVideo},'%')
+            </if>
+            <if test="params.xiquTypes != null and params.xiquTypes != ''">
+                and a.xiqu_types = #{params.xiquTypes}
+            </if>
+            <if test="params.zanNumberStart != null and params.zanNumberStart != ''">
+                <![CDATA[  and a.zan_number >= #{params.zanNumberStart}   ]]>
+            </if>
+            <if test="params.zanNumberEnd != null and params.zanNumberEnd != ''">
+                <![CDATA[  and a.zan_number <= #{params.zanNumberEnd}   ]]>
+            </if>
+             <if test="params.zanNumber != null and params.zanNumber != ''">
+                and a.zan_number = #{params.zanNumber}
+             </if>
+            <if test="params.caiNumberStart != null and params.caiNumberStart != ''">
+                <![CDATA[  and a.cai_number >= #{params.caiNumberStart}   ]]>
+            </if>
+            <if test="params.caiNumberEnd != null and params.caiNumberEnd != ''">
+                <![CDATA[  and a.cai_number <= #{params.caiNumberEnd}   ]]>
+            </if>
+             <if test="params.caiNumber != null and params.caiNumber != ''">
+                and a.cai_number = #{params.caiNumber}
+             </if>
+            <if test="params.xiquClicknumStart != null and params.xiquClicknumStart != ''">
+                <![CDATA[  and a.xiqu_clicknum >= #{params.xiquClicknumStart}   ]]>
+            </if>
+            <if test="params.xiquClicknumEnd != null and params.xiquClicknumEnd != ''">
+                <![CDATA[  and a.xiqu_clicknum <= #{params.xiquClicknumEnd}   ]]>
+            </if>
+             <if test="params.xiquClicknum != null and params.xiquClicknum != ''">
+                and a.xiqu_clicknum = #{params.xiquClicknum}
+             </if>
+            <if test=" params.xiquContent != '' and params.xiquContent != null and params.xiquContent != 'null' ">
+                and a.xiqu_content like CONCAT('%',#{params.xiquContent},'%')
+            </if>
+            <if test="params.shangxiaTypes != null and params.shangxiaTypes != ''">
+                and a.shangxia_types = #{params.shangxiaTypes}
+            </if>
+            <if test="params.xiquDeleteStart != null and params.xiquDeleteStart != ''">
+                <![CDATA[  and a.xiqu_delete >= #{params.xiquDeleteStart}   ]]>
+            </if>
+            <if test="params.xiquDeleteEnd != null and params.xiquDeleteEnd != ''">
+                <![CDATA[  and a.xiqu_delete <= #{params.xiquDeleteEnd}   ]]>
+            </if>
+             <if test="params.xiquDelete != null and params.xiquDelete != ''">
+                and a.xiqu_delete = #{params.xiquDelete}
+             </if>
+            <if test=" params.insertTimeStart != '' and params.insertTimeStart != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.insert_time) >= UNIX_TIMESTAMP(#{params.insertTimeStart}) ]]>
+            </if>
+            <if test=" params.insertTimeEnd != '' and params.insertTimeEnd != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.insert_time) <= UNIX_TIMESTAMP(#{params.insertTimeEnd}) ]]>
+            </if>
+
+        </where>
+        order by a.${params.sort} ${params.order}
+    </select>
+
+</mapper>

@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#648070",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "我的戏曲收藏",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

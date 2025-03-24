@@ -1,0 +1,94 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/forget/forget",
+    "pages/changepassword/changepassword",
+    "pages/center/center",
+    "pages/user-info/userinfo",
+    "pages/caozuorizhi/list",
+    "pages/caozuorizhi/list2",
+    "pages/caozuorizhi/add-or-update",
+    "pages/caozuorizhi/detail",
+    "pages/gonggao/list",
+    "pages/gonggao/list2",
+    "pages/gonggao/add-or-update",
+    "pages/gonggao/detail",
+    "pages/xiqu/list",
+    "pages/xiqu/list2",
+    "pages/xiqu/add-or-update",
+    "pages/xiqu/detail",
+    "pages/xiquCollection/list",
+    "pages/xiquCollection/list2",
+    "pages/xiquCollection/add-or-update",
+    "pages/xiquCollection/detail",
+    "pages/xiquLiuyan/list",
+    "pages/xiquLiuyan/list2",
+    "pages/xiquLiuyan/add-or-update",
+    "pages/xiquLiuyan/detail",
+    "pages/xiqukepu/list",
+    "pages/xiqukepu/list2",
+    "pages/xiqukepu/add-or-update",
+    "pages/xiqukepu/detail",
+    "pages/yonghu/list",
+    "pages/yonghu/list2",
+    "pages/yonghu/add-or-update",
+    "pages/yonghu/detail",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "戏曲文化苑",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#FFFFFF",
+    "selectedColor": "#fff",
+    "borderStyle": "black",
+    "backgroundColor": "#599f6e",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/index.png",
+        "selectedIconPath": "static/tabs/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/gonggao/list",
+        "iconPath": "static/tabs/type.png",
+        "selectedIconPath": "static/tabs/type1.png",
+        "text": "公告"
+      },
+      {
+        "pagePath": "pages/xiqu/list",
+        "iconPath": "static/tabs/type.png",
+        "selectedIconPath": "static/tabs/type1.png",
+        "text": "戏曲"
+      },
+      {
+        "pagePath": "pages/xiqukepu/list",
+        "iconPath": "static/tabs/type.png",
+        "selectedIconPath": "static/tabs/type1.png",
+        "text": "戏曲科普"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabs/mine.png",
+        "selectedIconPath": "static/tabs/mine1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "小程序将使用定位功能"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "usingComponents": {}
+}
